@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 // dotenv.config({ path: "./config/config.env" });
-dotenv.config();
+dotenv.config({ path: ".env" });
 
 app.use(express.json());
 
