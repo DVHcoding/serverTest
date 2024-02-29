@@ -9,5 +9,8 @@ const product = require("./routes/productRoute");
 
 app.use("/api/v1", product);
 
+app.use("/", (req, res) => {
+    res.send(`<h1>${process.env.PORT}</h1>`);
+})
 
 module.exports = app;
