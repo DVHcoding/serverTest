@@ -3,7 +3,7 @@ const app = require("./app");
 const dotenv = require("dotenv");
 // dotenv.config({ "path": "./config/config.env" });
 // dotenv.config();
-config({
+dotenv.config({
     path: "./.env",
 });
 
